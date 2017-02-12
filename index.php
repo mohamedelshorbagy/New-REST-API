@@ -51,12 +51,19 @@ $app->get('/login/:Name/:password',function ($Name , $password) use ($app) {
     $stmt = $db->prepare("SELECT * FROM person WHERE Name='$Name' AND password='$password'");
     $stmt->execute();
     $rowCount = $stmt->rowCount();
-
+    $response = array(
+        "row"=>"true"
+    );
+        $responseFalse = array(
+            "row"=>"false"
+        );
       if ($rowCount > 0) {
-          echo '{"row":"true"}';
+
+          echo json_encode($response,JSON_PRETTY_PRINT);
 
       } else {
-        echo '{"row":"false"}';
+          echo json_encode($responseFalse,JSON_PRETTY_PRINT);
+
       }
 
 
