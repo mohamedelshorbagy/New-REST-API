@@ -17,7 +17,7 @@
 9. healthCondition
 10. birthDate
 
-URL : http://localhost/API/index.php/insertMember
+URL : http://YourIPADDRESS/API/index.php/insertMember
 
 
 
@@ -49,11 +49,11 @@ URL : http://localhost/API/index.php/insertMember
 2. password
 
 
-URL: http://localhost/API/index.php/login/:Name/:password
+URL: http://YourIPADDRESS/API/index.php/login/:Name/:password
 
 # Example 
 
-http://localhost/API/index.php/login/Mohamed/123456
+http://YourIPADDRESS/API/index.php/login/Mohamed/123456
 
 
 
